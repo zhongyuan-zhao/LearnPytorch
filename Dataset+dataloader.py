@@ -4,7 +4,7 @@ from torch.utils.data import Dataset
 from torch.utils.data import DataLoader
 from torchvision import datasets
 from torchvision.io import read_image
-from torchvision.transforms import ToTensor
+from torchvision.transforms import ToTensor, Lambda
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -78,3 +78,4 @@ label = train_labels[0]
 plt.imshow(img, cmap="gray")
 plt.show()
 print(f"Label: {label}")
+
